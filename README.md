@@ -4,17 +4,17 @@
 The bot will take usernames (available), check them against specified criteria, and then give them to you if all criteria match.
 
 ## Criteria
-1. length
+1. Minimal length
 2. search for a noun/verb
 3. to use AI or not
-4. (If AI is used):Username rarity 
+4. (If AI is used): Minimal username rarity 
 **and most likely other different criteria**
 
 ## stages
 - [x] create a project
-- [ ] create a bot
-- [ ] integrate gemini
+- [x] create a bot
 - [ ] add criteria
+- [ ] integrate gemini
 - [ ] finish the project
 
 ## instructions
