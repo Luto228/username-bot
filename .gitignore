@@ -5,6 +5,7 @@ __pycache__/
 config.env
 venv/
 test.py
+gg.py
 # C extensions
 *.so
 
