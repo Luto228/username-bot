@@ -1,10 +1,14 @@
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+
 # username-bot
 
 ## About the Bot:
 The bot will take usernames (available), check them against specified criteria, and then give them to you if all criteria match.
 
 ## Criteria
-1. Minimal length
+1. maximal length
 2. search for a noun/verb
 3. to use AI or not
 4. (If AI is used): Minimal username rarity 
