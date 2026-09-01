@@ -1,11 +1,12 @@
 import json
 import random 
+import asyncio
 
 from core.gemini import generate_username
-with open("words_dictionary.json", "r", encoding="utf-8") as file:
+with open("categorized_words.json", "r", encoding="utf-8") as file:
         ALL_WORDS = json.load(file)
 
-def start_find_username(max_length, noun, verb, adjectives, use_ai, minimal_rarity):
+async def find_username(max_length, noun, verb, adjectives, use_ai, minimal_rarity):
         user_word = set()
         VALID_YES = ["yes", "y"]
         if noun.lower() in VALID_YES:
@@ -25,7 +26,7 @@ def start_find_username(max_length, noun, verb, adjectives, use_ai, minimal_rari
         if use_ai.lower() in VALID_YES:
             for word in word_list:
                 try:
-                    score = generate_username(word)
+                    score = await generate_username(word)
                     if int(score.strip()) >= minimal_rarity:
                         return word
                 except ValueError as e:
