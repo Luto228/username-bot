@@ -17,8 +17,8 @@ The bot will take usernames (available), check them against specified criteria, 
 ## stages
 - [x] create a project
 - [x] create a bot
-- [ ] add criteria
-- [ ] integrate gemini
+- [x] add criteria
+- [x] integrate gemini
 - [ ] finish the project
 
 ## instructions
