@@ -5,9 +5,9 @@ from google.genai import types
 async def generate_username(username) -> str:
     client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
-    response = await client.aio.generate_content(
+    response = await client.aio.models.generate_content(
         model = "gemini-3.6-flash",
-        content = f"""
+        contents = f"""
         You are a strict, automated Telegram username evaluator. 
 
         Your task is to analyze a username based on Brevity, Aesthetic Appeal, and Marketability, and combine them into a single overall score from 1 to 10.
