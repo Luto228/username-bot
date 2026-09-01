@@ -2,7 +2,8 @@ import os
 from google import genai
 from google.genai import types
 
-async def generate_username(username) -> str:
+
+async def generate_username(username: str) -> str | None:
     client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
     response = await client.aio.models.generate_content(
